@@ -1,0 +1,43 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let ticket of ticketList">
+      {{ ticket.id }} - {{ ticket.bookingDetailsId }} -
+      {{ ticket.seatNumber }} - {{ ticket.cost }}
+    </li>
+  </ul>
+
+  <div class="centered-form">
+    <h2>Book a Seat</h2>
+    <form [formGroup]="bookingForm">
+      <div>
+        <label for="bookingDetailsId">Booking Details ID:</label>
+        <input
+          type="text"
+          id="bookingDetailsId"
+          formControlName="bookingDetailsId"
+        />
+      </div>
+      <div>
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber" formControlName="seatNumber" />
+      </div>
+      <div>
+        <label for="costType">Cost Type:</label>
+        <select id="costType" formControlName="costType">
+          <option value="general">General Rs. 50$</option>
+          <option value="sleeper">Sleeper Rs. 200$</option>
+          <option value="ac">AC Rs. 1000$</option>
+        </select>
+      </div>
+      <button type="button" (click)="searchBookingDetails()">
+        Search Booking Details
+      </button>
+      <br />
+      <button type="button" (click)="bookSeat()">Book Seat</button>
+    </form>
+
+    <div *ngIf="bookingSuccess" class="booking-success">
+      <span>&#10004;</span> Ticket has been successfully booked!
+    </div>
+  </div>
+</div>

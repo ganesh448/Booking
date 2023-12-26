@@ -1,0 +1,40 @@
+.ticket-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-info {
+  border: 1px solid #ccc;
+  background-color: #ddb54e;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 500px;
+}
+
+.ticket-detail-box {
+  border: 2px solid #864a4a;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: #cfd3b7;
+}
+
+.ticket-detail-box.special-box {
+  border-radius: 50%;
+  background-color: #ffcc00;
+}
+.ticket-card {
+  margin: 10px;
+}
+
+.ticket-info {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.ticket-detail-box {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,11 @@
+<!-- booking-details-list.component.html -->
+
+<div class="container">
+  <h2>Booking Details List</h2>
+  <ul>
+    <li *ngFor="let bookingDetail of bookingDetails">
+      User ID: {{ bookingDetail.userId }}, Train ID:{{ bookingDetail.trainId }},
+      Seats: {{ bookingDetail.numberOfSeats }}
+    </li>
+  </ul>
+</div>

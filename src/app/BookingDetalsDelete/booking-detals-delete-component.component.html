@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Welcome TO Train Ticket Booking System</h2>
+
+  <div>
+    <label for="deleteUserId">Delete Booking by User ID:</label>
+    <input
+      type="text"
+      id="deleteUserId"
+      name="deleteUserId"
+      [(ngModel)]="bookingDetails.userId"
+      required
+    />
+
+    <button
+      type="button"
+      class="btn"
+      (click)="deleteBooking(bookingDetails.userId)"
+    >
+      Delete
+    </button>
+  </div>
+
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <hr />
+</div>

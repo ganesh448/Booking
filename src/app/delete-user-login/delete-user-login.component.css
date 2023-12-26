@@ -1,0 +1,55 @@
+div {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #4f7396;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(232, 234, 217);
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #191010;
+  border-radius: 4px;
+  background-color: rgb(170, 126, 80);
+}
+
+input::placeholder {
+  margin-top: 8px;
+  color: #100a0a;
+}
+
+button {
+  padding: 12px;
+  background-color: hwb(137 8% 14% / 0.777);
+  color: #1d1515;
+  border: 1px solid #191010;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #10a210;
+}
+
+button:disabled {
+  background-color: rgb(31, 198, 31);
+  cursor: not-allowed;
+}

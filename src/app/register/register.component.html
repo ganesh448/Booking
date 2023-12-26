@@ -1,0 +1,64 @@
+<div class="registration-container">
+  <h2>User Registration</h2>
+
+  <form (submit)="registerUser()" #registrationForm="ngForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="user.name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      id="email"
+      [(ngModel)]="user.email"
+      name="email"
+      required
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    />
+    <div
+      *ngIf="
+        registrationForm.controls['email']?.hasError('required') &&
+        (registrationForm.controls['email']?.dirty ||
+          registrationForm.controls['email']?.touched)
+      "
+    >
+      <div>Email is required.</div>
+    </div>
+    <div
+      *ngIf="
+        registrationForm.controls['email']?.hasError('pattern') &&
+        (registrationForm.controls['email']?.dirty ||
+          registrationForm.controls['email']?.touched)
+      "
+    >
+      <div>Enter a valid email address.</div>
+    </div>
+
+    <label for="phoneNo">Phone Number:</label>
+    <input type="tel" id="phoneNo" [(ngModel)]="user.phoneNo" name="phoneNo" />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" [(ngModel)]="user.address" name="address" />
+
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      [(ngModel)]="user.password"
+      name="password"
+      required
+    />
+    <div
+      *ngIf="
+        registrationForm.controls['password']?.hasError('required') &&
+        (registrationForm.controls['password']?.dirty ||
+          registrationForm.controls['password']?.touched)
+      "
+    >
+      <div>Password is required.</div>
+    </div>
+
+    <button type="submit" [disabled]="registrationForm.invalid">
+      Register
+    </button>
+  </form>
+</div>

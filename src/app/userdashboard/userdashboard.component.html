@@ -1,0 +1,16 @@
+<h2><I>Welcome To User Dashboard</I></h2>
+<nav class="sidebar">
+  <ul>
+    <li><a routerLink="/allusers">All registered Users</a></li>
+    <li><a routerLink="/register">User Registration</a></li>
+    <li><a routerLink="/deleteuser/:id">Delete user By ID</a></li>
+    <li><a routerLink="/updateuser/:id">Update user By ID</a></li>
+    <li><a routerLink="/user/:id">Get user By ID</a></li>
+    <li><a routerLink="/all">All Login Users</a></li>
+    <li><a routerLink="/login">User Login </a></li>
+    <li>
+      <a routerLink="/deleteuserlogin/:email">Delete userLogin By Email</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

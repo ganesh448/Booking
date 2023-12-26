@@ -1,0 +1,11 @@
+<div *ngIf="userLogin">
+  <h2>User Login Details</h2>
+  <ul>
+    <li><strong>Email:</strong> {{ userLogin.email }}</li>
+    <li><strong>Password:</strong> {{ userLogin.password }}</li>
+  </ul>
+</div>
+
+<div *ngIf="!userLogin">
+  <p>No user login details available for the specified email.</p>
+</div>

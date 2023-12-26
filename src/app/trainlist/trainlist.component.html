@@ -1,0 +1,27 @@
+<h2>Train List</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id:</th>
+      <th>Name:</th>
+      <th>Capacity:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let train of trains">
+      <td>{{ train.id }}</td>
+      <td>{{ train.name }}</td>
+      <td>{{ train.capacity }}</td>
+      <td>
+        <button (click)="updateTrain(train.id)" class="btn btn-info">
+          Update
+        </button>
+      </td>
+      <td>
+        <button (click)="deleteTrain(train.id)" class="btn btn-danger">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
