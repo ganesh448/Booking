@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+.background-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.background-container h1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+div {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border: 1px solid #4fc3f7;
+}

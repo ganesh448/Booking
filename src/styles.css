@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+nav {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: scrolll;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+li a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #211e1e;
+  background-color: #bccee2;
+}
+li a:hover,
+button:hover {
+  background-color: #ddd;
+}
+li.router-link-active a {
+  color: #fff;
+  background-color: #007bff;
+}
+.content-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.user-dashboard-container {
+  margin-top: 10px;
+  padding: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/trrr.jpg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+li {
+  margin-right: 10px;
+}
+button {
+  display: block;
+  padding: 10px 16px;
+  background-color: rgb(71, 184, 23);
+}

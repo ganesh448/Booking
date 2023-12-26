@@ -1,0 +1,52 @@
+/* Add your custom styles here */
+
+div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgb(255, 228, 193);
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  color: rgb(206, 151, 79);
+  background-color: antiquewhite;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #3fb139;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #288e3e;
+}
+
+div.error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}

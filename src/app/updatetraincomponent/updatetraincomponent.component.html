@@ -1,0 +1,43 @@
+<div class="col-md-6 offset-md-3">
+  <br />
+
+  <h3>Update Train!</h3>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Id</label>
+      <input
+        type="text"
+        class="form-control"
+        id="Id"
+        [(ngModel)]="train.id"
+        name="id"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="Name"
+        [(ngModel)]="train.name"
+        name="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Capacity</label>
+      <input
+        type="text"
+        class="form-control"
+        id="Capacity"
+        [(ngModel)]="train.capacity"
+        name="capacity"
+      />
+    </div>
+
+    <br />
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,89 @@
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  border: 1px solid #d06060;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgb(232, 234, 217); 
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 5px;
+}
+.centered-form {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+  max-width: 400px;
+  border: 1px solid #c35858;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #c9a39b;
+}
+
+button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.booking-success {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.booking-success span {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #3c763d;
+}

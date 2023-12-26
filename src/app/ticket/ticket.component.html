@@ -1,0 +1,18 @@
+<!-- ticket-list.component.html -->
+<h1>All Tickets</h1>
+<div *ngFor="let ticket of tickets$ | async" class="ticket-card">
+  <div class="ticket-info">
+    <div class="ticket-detail-box">
+      <strong>Ticket ID:</strong> {{ ticket.id }}
+    </div>
+    <div class="ticket-detail-box">
+      <strong>Booking Details ID:</strong> {{ ticket.bookingDetailsId }}
+    </div>
+    <div class="ticket-detail-box">
+      <strong>Seat Number:</strong> {{ ticket.seatNumber }}
+    </div>
+    <div class="ticket-detail-box">
+      <strong>Cost:</strong> ${{ ticket.cost | number : "1.2-2" }}
+    </div>
+  </div>
+</div>

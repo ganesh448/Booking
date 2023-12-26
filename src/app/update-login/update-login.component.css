@@ -1,0 +1,13 @@
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}

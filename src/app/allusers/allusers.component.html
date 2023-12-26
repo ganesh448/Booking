@@ -1,0 +1,31 @@
+<div class="container">
+  <div *ngIf="users && users.length > 0">
+    <h2>All Registered Users:</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th (click)="sortTable('id')">User ID</th>
+          <th (click)="sortTable('name')">Name</th>
+          <th (click)="sortTable('email')">Email</th>
+          <th (click)="sortTable('phoneNo')">Phone Number</th>
+          <th (click)="sortTable('address')">Address</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phoneNo }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.password }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="errorMessage">
+    <p style="color: red">{{ errorMessage }}</p>
+  </div>
+</div>

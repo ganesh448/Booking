@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(232, 234, 217);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+th {
+  background-color: rgb(218, 95, 38);
+  padding: 10px;
+  text-align: left;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  background-color: rgb(225, 182, 162);
+}

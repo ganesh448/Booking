@@ -1,0 +1,27 @@
+<!-- admin-dashboard.component.html -->
+
+<header>
+  <h2>Welcome To Admin Dashboard</h2>
+</header>
+<main *ngIf="isLoggedIn; else loginForm"></main>
+<ng-template #loginForm>
+  <form>
+    <label for="loginId">Login ID:</label>
+    <input
+      type="text"
+      id="loginId"
+      name="loginId"
+      [(ngModel)]="loginId"
+      required
+    />
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="password"
+      required
+    />
+    <button type="button" (click)="login(loginId, password)">Login</button>
+  </form>
+</ng-template>

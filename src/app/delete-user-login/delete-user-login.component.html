@@ -1,0 +1,19 @@
+<div>
+  <h2>Delete User Login</h2>
+  <form #deleteForm="ngForm">
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        [(ngModel)]="email"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <button type="button" (click)="deleteUser()" [disabled]="!deleteForm.valid">
+      Delete
+    </button>
+  </form>
+</div>

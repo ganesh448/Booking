@@ -1,0 +1,44 @@
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #c27575;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(232, 234, 217);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  background-color: #c9a39b;
+  color: #694a4a;
+}
+.success-button {
+  background-color: green;
+  color: white;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: rgb(54, 183, 54);
+  font-size: 18px;
+  margin-top: 10px;
+}
